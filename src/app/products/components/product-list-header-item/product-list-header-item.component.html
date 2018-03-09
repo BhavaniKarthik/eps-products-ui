@@ -1,0 +1,8 @@
+<a class="table-head-link" (click)="emitSort()">{{displayText}}
+    <span class="arrow" *ngIf="sortField.name === sortByFieldName && sortField.order === SORT_ORDER.ASC">
+        <i class="fas fa-sort-down"></i>
+    </span>
+    <span class="arrow" *ngIf="sortField.name === sortByFieldName && sortField.order === SORT_ORDER.DESC">
+        <i class="fas fa-sort-up"></i>
+    </span>
+  </a>

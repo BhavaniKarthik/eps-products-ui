@@ -1,0 +1,22 @@
+<table class="table table-striped table-bordered">
+  <thead class="thead-dark">
+    <tr>
+        <th style="width: 33.3%">
+          <app-product-list-header-item [displayText]="'Product Name'" [sortBy]="'name'" [sortField]="sortField" (sort)="sort($event)"></app-product-list-header-item>
+        </th>
+        <th style="width: 33.3%">
+            <app-product-list-header-item [displayText]="'Price'" [sortBy]="'price'" [sortField]="sortField" (sort)="sort($event)"></app-product-list-header-item>
+      </th>
+        <th style="width: 33.3%">
+            <app-product-list-header-item [displayText]="'Category'" [sortBy]="'category'" [sortField]="sortField" (sort)="sort($event)"></app-product-list-header-item>
+        </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of sortedProducts">
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.category}}</td>
+    </tr>
+  </tbody>
+</table>

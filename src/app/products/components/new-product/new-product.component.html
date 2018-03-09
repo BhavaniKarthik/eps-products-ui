@@ -1,0 +1,43 @@
+<div class="card new-product">
+  <div class="card-body">
+    <h5>Add New Product</h5>
+    <form>
+        <!-- PRODUCT NAME -->
+        <div class="form-group">
+          <label for="productName">Product Name</label>
+          <input type="text"
+                class="form-control"
+                name="productName"
+                autocomplete="off"
+                placeholder="Enter Product Name"
+                [(ngModel)]="product.name">
+        </div>
+
+        <!-- PRODUCT PRICE -->
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text"
+                class="form-control"
+                name="price"
+                autocomplete="off"
+                placeholder="Enter Price"
+                [(ngModel)]="product.price">
+        </div>
+
+        <!-- CATEGORY -->
+        <div class="form-group">
+          <label for="category">Category</label>
+          <input type="text"
+                class="form-control"
+                name="category"
+                autocomplete="off"
+                placeholder="Enter Category"
+                [(ngModel)]="product.category">
+        </div>
+
+        <div class="btn-panel">
+            <button type="submit" class="btn btn-primary" (click)="addProduct()">Add Product</button>
+        </div>
+    </form>
+  </div>
+</div>

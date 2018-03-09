@@ -1,0 +1,16 @@
+<div class="products-home">
+    <div class="row">
+        <div class="col-md-12">
+          <h3>Product List</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+            <app-product-list [products]="products"></app-product-list>
+        </div>
+        <div class="col-md-4">
+            <app-new-product (onProductAdded)="onProductAdded($event)"></app-new-product>
+        </div>
+      </div>
+</div>
+
