@@ -1,4 +1,6 @@
-# Eps.Products.Ui
+# Eps Code challenge UI
+
+## [DEMO LINK](https://bhavanikarthik.github.io) 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 

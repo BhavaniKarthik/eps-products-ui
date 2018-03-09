@@ -12,25 +12,25 @@ export class ProductService {
   private _productCollectionDB: Array<Product> = [
     {
       id: Guid.newGuid(),
-      name: "Product 1",
+      name: "Product A",
       price: 292,
       category: "Cloths"
     },
     {
       id: Guid.newGuid(),
-      name: "AProduct 2",
+      name: "Product B",
       price: 8,
       category: "Toys"
     },
     {
       id: Guid.newGuid(),
-      name: "CProduct 3",
+      name: "Product C",
       price: 592,
       category: "Sports"
     },
     {
       id: Guid.newGuid(),
-      name: "BProduct 4",
+      name: "Product D",
       price: 12,
       category: "Electronics"
     }
