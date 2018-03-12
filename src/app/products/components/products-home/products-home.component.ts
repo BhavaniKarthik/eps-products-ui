@@ -19,7 +19,7 @@ export class ProductsHomeComponent implements OnInit {
   }
 
   onProductAdded(newProduct: Product) {
-    this._getProducts();
+    this.products = this.products.concat(newProduct);
   }
 
   private _getProducts() {

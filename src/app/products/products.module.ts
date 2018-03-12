@@ -6,10 +6,11 @@ import { NewProductComponent } from './components/new-product/new-product.compon
 import { ProductService } from './services/product.service';
 import { FormsModule } from '@angular/forms';
 import { ProductListHeaderItemComponent } from './components/product-list-header-item/product-list-header-item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
-    CommonModule, FormsModule
+    CommonModule, FormsModule, HttpClientModule
   ],
   declarations: [ProductsHomeComponent, ProductListComponent, NewProductComponent, ProductListHeaderItemComponent],
   providers: [ProductService]
