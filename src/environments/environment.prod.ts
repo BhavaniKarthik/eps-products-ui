@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'http://usweb.dotomi.com/resources/swfs/cookies.json'
+  baseUrl: 'https://usweb.dotomi.com/resources/swfs/cookies.json'
 };
